@@ -1016,7 +1016,8 @@ section {
     height: 200%;
     background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
     animation: magicGlow 8s ease-in-out infinite;
-    z-index: 1;
+    z-index: -1;
+    pointer-events: none;
 }
 
 @keyframes magicGlow {
@@ -1115,6 +1116,16 @@ section {
 
 .cta-buttons {
     margin: 40px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.cta-buttons .btn-primary {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    position: relative;
+    z-index: 10;
 }
 
 .guarantee {
