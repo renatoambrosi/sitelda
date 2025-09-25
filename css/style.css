@@ -594,6 +594,8 @@ section {
 .credential-item span {
     font-weight: 600;
     color: var(--text-dark);
+    text-align: left;
+    line-height: 1.4;
 }
 
 .centered-text {
