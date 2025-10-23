@@ -33,7 +33,7 @@
     // Captura UTMs da URL atual
     const currentQuery = getQueryParams();
     
-    const utmSource = currentQuery.utm_source || getOrSetSession('utm_source', null) || 'LpLDA';
+    const utmSource = currentQuery.utm_source || getOrSetSession('utm_source', null) || 'LpLda';
     const utmMedium = currentQuery.utm_medium || getOrSetSession('utm_medium', null) || '';
     
     sessionStorage.setItem('utm_source', utmSource);
@@ -80,13 +80,13 @@
             // Cria utm_campaign baseado no contexto do link
             let utmCampaign = 'LDABiblica';
             if (link.closest('.hero')) {
-                utmCampaign = 'hero-lda';
+                utmCampaign = 'lplda1';
             } else if (link.closest('.cta-section')) {
                 utmCampaign = 'cta-lda';
             }
             
             const utmParams = {
-                utm_source: sessionStorage.getItem('utm_source') || 'LpLDA',
+                utm_source: sessionStorage.getItem('utm_source') || 'LpLda',
                 utm_medium: sessionStorage.getItem('utm_medium') || '',
                 utm_campaign: utmCampaign
             };
@@ -110,7 +110,7 @@
             const baseUrl = headerHomeLink.getAttribute('href');
             
             const utmParams = {
-                utm_source: sessionStorage.getItem('utm_source') || 'LpLDA',
+                utm_source: sessionStorage.getItem('utm_source') || 'LpLda',
                 utm_medium: sessionStorage.getItem('utm_medium') || ''
             };
             
