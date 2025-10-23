@@ -82,7 +82,7 @@
             if (link.closest('.hero')) {
                 utmCampaign = 'lplda1';
             } else if (link.closest('.cta-section')) {
-                utmCampaign = 'cta-lda';
+                utmCampaign = 'lplda-cta';
             }
             
             const utmParams = {
