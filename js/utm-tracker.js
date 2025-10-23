@@ -80,9 +80,9 @@
             // Cria utm_campaign baseado no contexto do link
             let utmCampaign = 'LDABiblica';
             if (link.closest('.hero')) {
-                utmCampaign = 'lplda1';
+                utmCampaign = 'LpLda-hero';
             } else if (link.closest('.cta-section')) {
-                utmCampaign = 'lplda-cta';
+                utmCampaign = 'LpLda-cta';
             }
             
             const utmParams = {
