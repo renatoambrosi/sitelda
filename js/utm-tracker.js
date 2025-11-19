@@ -83,6 +83,8 @@
                 utmCampaign = 'LpLda-hero';
             } else if (link.closest('.cta-section')) {
                 utmCampaign = 'LpLda-cta';
+            } else if (link.closest('.nav-links')) {
+                utmCampaign = 'LpLda-header';
             }
             
             const utmParams = {
